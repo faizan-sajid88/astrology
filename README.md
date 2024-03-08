@@ -1,3 +1,3 @@
 # astrology
 
-Deploy Link - https://animated-sunshine-471739.netlify.app/ 
+Deploy Link - https://astrology-home-page.netlify.app/ 
