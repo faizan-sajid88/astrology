@@ -158,7 +158,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    
+
     }
 
     .person-div {
@@ -436,6 +436,7 @@ body {
 
 
     }
+
     .video-details p {
         font-size: 1rem;
         text-align: center;
@@ -488,15 +489,14 @@ body {
     }
 
     .navigation-container {
-        margin-top: 20px;
         background-color: #fd7222;
         width: 100%;
-        height: 100px;
         position: fixed;
         bottom: 0px;
         z-index: 1;
-        padding-top: 10px;
+        padding: 5px 0;
         box-shadow: -2px -2px 15px rgb(0, 0, 0);
+        overflow: visible;
     }
 
     .navigation-container ul {
@@ -504,10 +504,10 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        padding-bottom: 5px;
     }
 
     .navigation-container ul li {
-        padding-bottom: 50px;
         width: 20%;
         height: 20%;
         list-style: none;
@@ -521,19 +521,24 @@ body {
     .navigation-icon {
         background-color: #ffffff;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        padding: 7px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-        width: 50px;
-        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 50px;
         box-shadow: 2px 2px 5px black;
+    }
+
+    .polygon {
+        background-color: #f7a779;
+        padding: 2px;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     }
 
     .navigation-container ul li img {
         width: 100%;
-        height: 100%;
-      
+        height: auto;
+
     }
 
     .navigation-container ul li p {
@@ -541,16 +546,21 @@ body {
         background-color: white;
         padding: 1px 8px;
         border: 2px solid #f7a779;
+        border-radius: 2px;
     }
 
     .navigation-container ul li:hover {
         transition: all 0.2s ease-in-out;
-        transform: scale(1.4);
-        padding-bottom: 50px;
+        transform: scale(1.4) translate(0px, -20%);
+        ;
         filter: drop-shadow(0 -2mm 2mm rgba(46, 46, 46, 0.438));
 
     }
- 
+
+    .polygon:hover {
+        background-color: #fa5e01;
+    }
+
     @media only screen and (max-width: 400px) {
         .navigation-container ul li img {
             width: 30px;
