@@ -536,8 +536,8 @@ body {
     }
 
     .navigation-container ul li img {
-        width: 100%;
-        height: auto;
+        width: 30px;
+        height: 30px;
 
     }
 
@@ -551,7 +551,7 @@ body {
 
     .navigation-container ul li:hover {
         transition: all 0.2s ease-in-out;
-        transform: scale(1.4) translate(0px, -20%);
+        transform: scale(1.2) translate(0px, -20%);
         ;
         filter: drop-shadow(0 -2mm 2mm rgba(46, 46, 46, 0.438));
 
@@ -562,10 +562,10 @@ body {
     }
 
     @media only screen and (max-width: 400px) {
-        .navigation-container ul li img {
+        /* .navigation-container ul li img {
             width: 30px;
             height: 30px;
-        }
+        } */
     }
 
     #drawer {
