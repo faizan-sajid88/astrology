@@ -5,6 +5,8 @@
 body {
     text-align: center;
     scroll-behavior: smooth;
+    /* overflow: scroll; */
+    /* width: 100%; */
 }
 
 .notice {
@@ -35,14 +37,14 @@ body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-    a {
+    /* a {
         color: black;
         text-decoration: none;
         margin: 5px 10px;
         font-size: 1.6rem;
         font-family: serif;
         font-weight: bold;
-    }
+    } */
 
     .drawer-div {
         display: flex;
@@ -123,9 +125,14 @@ body {
 
     .top-banner-section {
         margin-top: 100px;
+        /* width: 100%; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
     }
 
     .top-banner img {
+        /* border-radius: 25px; */
         width: 90%;
     }
 
@@ -158,7 +165,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        /* overflow-x: auto; */
     }
 
     .person-div {
@@ -174,6 +181,7 @@ body {
 
     .person-div img {
         width: 100%;
+        /* height: 100%; */
         border-radius: 7px;
     }
 
@@ -184,7 +192,7 @@ body {
         width: 85%;
         position: relative;
         bottom: 30px;
-
+        /* height: 10vh; */
 
     }
 
@@ -217,6 +225,7 @@ body {
         }
 
         .person-details h3 {
+            /* font-size: 0.5rem; */
             margin: 5px 0;
         }
 
@@ -252,6 +261,7 @@ body {
         font-size: calc(10px + 1vmin);
         text-align: center;
         width: 30%;
+        /* height: 80%; */
         justify-content: center;
         align-items: center;
         margin: 10px 0;
@@ -301,11 +311,14 @@ body {
 
     .service img,
     .product img {
+        /* width: 50px;
+        height: 50px; */
         width: 100%;
         height: 100%;
         padding: 0.4em;
         transform: rotate(45deg);
         background-color: transparent;
+        /* position: relative; */
         border-radius: 5px;
         margin: 15px;
     }
@@ -437,6 +450,13 @@ body {
 
     }
 
+    /* .yt-video-div img {
+        width: 100%;
+        height: 30%;
+        border-radius: 10px;
+        border: 1px solid black;
+    } */
+
     .video-details p {
         font-size: 1rem;
         text-align: center;
@@ -464,6 +484,7 @@ body {
         border: none;
         border-radius: 5px;
         color: white;
+        /* margin-top: 20px; */
         box-shadow: 5px 5px 20px rgb(138, 138, 138);
     }
 
@@ -489,14 +510,15 @@ body {
     }
 
     .navigation-container {
+        margin-top: 20px;
         background-color: #fd7222;
         width: 100%;
+        height: 100px;
         position: fixed;
         bottom: 0px;
         z-index: 1;
-        padding: 5px 0;
+        padding-top: 10px;
         box-shadow: -2px -2px 15px rgb(0, 0, 0);
-        overflow: visible;
     }
 
     .navigation-container ul {
@@ -504,10 +526,10 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        padding-bottom: 5px;
     }
 
     .navigation-container ul li {
+        padding-bottom: 50px;
         width: 20%;
         height: 20%;
         list-style: none;
@@ -521,24 +543,19 @@ body {
     .navigation-icon {
         background-color: #ffffff;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 45px;
-        height: 50px;
+        padding: 7px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+        width: 50px;
+        height: 55px;
         box-shadow: 2px 2px 5px black;
     }
 
-    .polygon {
-        background-color: #f7a779;
-        padding: 2px;
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    }
-
     .navigation-container ul li img {
-        width: 30px;
-        height: 30px;
-
+        width: 100%;
+        height: 100%;
+      
     }
 
     .navigation-container ul li p {
@@ -546,26 +563,28 @@ body {
         background-color: white;
         padding: 1px 8px;
         border: 2px solid #f7a779;
-        border-radius: 2px;
+    }
+    .navigation-container ul a{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-decoration: none;
     }
 
     .navigation-container ul li:hover {
         transition: all 0.2s ease-in-out;
-        transform: scale(1.2) translate(0px, -20%);
-        ;
+        transform: scale(1.4);
+        padding-bottom: 50px;
         filter: drop-shadow(0 -2mm 2mm rgba(46, 46, 46, 0.438));
 
     }
-
-    .polygon:hover {
-        background-color: #fa5e01;
-    }
-
+ 
     @media only screen and (max-width: 400px) {
-        /* .navigation-container ul li img {
+        .navigation-container ul li img {
             width: 30px;
             height: 30px;
-        } */
+        }
     }
 
     #drawer {
@@ -626,4 +645,343 @@ body {
         height: 30px;
 
     }
+
+
+
+
+/* service page */
+
+
+.service-div {
+width: 100%;
+background-color: #ffefe6;
+margin-top: 80px;
 }
+.service-div h1{
+font-size: 1.8em;
+}
+.service-div img{
+width: 90%;
+border-radius: 10px;
+margin: 20px auto;
+}
+
+.service-text, .service-discription{
+text-align: start;
+margin: 10px ;
+padding-bottom: 20px;
+}
+.service-text{
+    border-bottom: 2px solid #fa5e01;
+}
+.service-btn{
+    width: 100%;
+margin: 0;
+border-radius: 0%;
+}
+
+/* Search page */
+
+.search-input-box{
+    width: 100%;
+    margin-top: 0%;
+}
+.search-input-box input{
+    margin: 20px 10px;
+    width: 90%;
+   padding: 15px 15px 15px 25px ;
+   border-radius: 50px;
+}
+
+.search-section{
+    margin-top: 100px;
+}
+.search-result a{
+    background-color: #ffdfccf5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    /* width: 90%; */
+    /* padding: auto 10px ; */
+    /* margin: 10px 20px; */
+    text-decoration: none;
+    color: black;
+}
+.search-result {
+    background-color: #ffdfccf5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    /* width: 90%; */
+    /* height: 40vh; */
+    padding: 10px ;
+    margin: 10px 20px;
+  
+}
+.search-left{
+    width: 30%;
+    margin: auto 1px;
+
+}
+.astrologer-img{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.rating-div img{
+border: none;
+width: 50%;
+}
+
+.search-right{
+    text-align: start;
+    padding:5px 10px;
+    font-weight: bolder;
+    width: 70%;
+}
+.search-right p{
+margin-bottom: 7px;
+}
+.search-right h2{
+font-size: 2em;
+}
+
+.search-right-btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.search-btn {
+background-color: #fa5e01;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2px;
+width: 30%;
+border-radius: 5px;
+border-radius: 5px;
+color: white;
+margin: 0 2%;
+}
+.search-btn img{
+width: 40%;
+height: 100%;
+
+}
+.search-btn p{
+    font-size: 0.8em;
+
+}
+
+@media only screen and (max-width: 400px) {
+.search-right p{
+    font-size: 0.8em;
+}
+
+    .search-btn p{
+     font-size: 0.5rem;
+        }
+        .search-btn img{
+            width: 30%;
+            /* height: 50%; */
+            margin: 5px;
+            }
+            .search-right h2{
+                font-size: 1.2em;
+                }
+                .active-status p{
+                    font-size: 0.6em;
+                }
+                .search-section{
+                    margin-top: 70px;
+                }
+} 
+    
+
+/* my profile */
+
+.my-profile-section{
+    margin-top: 80px;
+}
+.user-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+    padding: 20px 20px;
+}
+.user-details-left{
+margin: 10px;
+}
+.user-details-div{
+margin-bottom: 20px;
+}
+.user-details-left img{
+width: 100%;
+height: auto;
+background-color:#fa5e01;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+
+.my-profile-list ul{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.my-profile-list ul li{
+   border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+   padding: 20px 5px ;
+list-style: none;
+}
+.my-profile-list ul li a{
+    text-decoration: none;
+}
+.list-item{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 5px;
+}
+.list-img{
+    margin: 0 10px;
+}
+.list-img img{
+    width: 35px;
+    height: 35px;
+    /* background-color: #ffdfccf5; */
+   border-radius: 5px;
+}
+.item-containt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+.item-containt p{
+  font-size: 1.2em;
+  margin-left: 10px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.right-arrow{
+width: 30px;
+height: 30px;
+position: absolute;
+right: 10px;
+}
+   
+
+@media only screen and (max-width: 400px) {
+    .item-containt p{
+        font-size: 0.9em;
+      
+      }
+    }
+.rateing-bar{
+    background-color: #ffdfccf5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px 0px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 5px auto;
+}
+.img-rating img{
+    width: 60px;
+    /* height: 50pxs */
+    margin-right: 5px;
+}
+.img-rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.astrologer-gallery{
+    width: 100%;
+}
+.gallery-cards{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.gallary-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7px 20px;
+    margin-top: 30px;
+}
+.card{
+    width: 30%;
+    margin: 20px 0;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.card img{
+    width: 100%;
+    /* height: fit-content; */
+    height: 100px;
+    object-fit: fill;
+}
+.card p{
+  font-size: 10px;
+}
+
+.orange{
+    color: orange;
+}
+
+.gallery-discription p, .gallery-discription h5{
+text-align: start;
+margin-left: 10px;
+margin-top: 10px;
+font-weight: 600;
+}
+
+
+.gallary-review{
+    width: 90%;
+    text-align: start;
+    margin: 10px auto;
+}
+.review-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #ffdfccf5;
+    border-radius: 10px;
+    
+}
+.review-left{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.space{
+    padding: 50px 0;
+}
+a{
+    text-decoration: none;
+}
+}
+
+
+
+
+
+
